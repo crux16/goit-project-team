@@ -1,0 +1,23 @@
+.fruits-gif{
+  border-radius: 20px;
+  background-size: 860px 476px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background: url('../images/section-1/how-order.gif');
+
+  @media screen and (min-width: 375px) {
+    width: 335px;
+    height: 476px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 704px;
+    height: 476px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 860px;
+    height: 476px;
+  }
+}
