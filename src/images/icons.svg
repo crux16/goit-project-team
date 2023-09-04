@@ -38,5 +38,19 @@
     <path d="M29.044 11.926h-4.010c-1.237 0-2.24 0.983-2.24 2.195v3.929c0 1.212 1.003 2.195 2.24 2.195h4.009c1.237 0 2.24-0.983 2.24-2.195v-3.929c0-1.212-1.003-2.195-2.24-2.195z"></path>
 </symbol>
 
+<!-- shadow of Fruits -->
+<symbol id="shadow" width="251" height="94" viewBox="0 0 251 94" fill="none">
+  <g opacity="0.15" filter="url(#filter0_f_89_68)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M125.5 66C179.348 66 223 57.4934 223 47C223 36.5066 179.348 28 125.5 28C71.6522 28 28 36.5066 28 47C28 57.4934 71.6522 66 125.5 66Z" fill="black"/>
+  </g>
+  <defs>
+    <filter id="filter0_f_89_68" x="0.817183" y="0.817183" width="249.366" height="92.3656" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="13.5914" result="effect1_foregroundBlur_89_68"/>
+    </filter>
+  </defs>
+  </symbol>
+
 </defs>
 </svg>
