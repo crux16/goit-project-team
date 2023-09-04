@@ -127,10 +127,6 @@
 /*  MOBILE  */
 @media (min-width: 320px) {
     @media (max-width: 767px) {
-        .container {
-            padding: 0 20px;
-        }
-
         .fruits-project>.fruits-card img {
             width: 100%;
         }
@@ -147,10 +143,6 @@
     .fruits-image {
         height: 251px;
         width: 295px;
-    }
-
-    .container {
-        padding: 0 32px;
     }
 
     .fruit-info {
@@ -211,12 +203,6 @@
 
 /* LARGE SCREEN(Desktop) */
 @media screen and (min-width: 1280px) {
-    .container {
-        width: unset;
-        margin: 0px;
-        padding: 0px 32px;
-    }
-
     .fruit-info {
         display: flex;
         flex-direction: column;
