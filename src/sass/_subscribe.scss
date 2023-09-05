@@ -1,4 +1,5 @@
 .title-subscribe {
+  // width: 335px;
   color: #fff;
   text-align: center;
   font-size: 32px;
@@ -8,10 +9,13 @@
   letter-spacing: -1.28px;
   text-transform: uppercase;
   position: absolute;
-  padding: 0 30px;
+  padding: 0 10px;
+  top: -50px;
 }
 
 .container-subscribe {
+  position: relative;
+  margin-top: 53px;
   display: flex;
   justify-content: center;
 }
@@ -22,7 +26,6 @@
 }
 
 .melon-image {
-  padding-top: 53px;
   /* Add the following styles for centering */
   margin: 0 auto;
   width: 335px;
@@ -52,7 +55,6 @@
     color: #fff;
     text-align: center;
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-    font-family: DM San;
     font-size: 54px;
     font-style: normal;
     font-weight: 400;
@@ -60,9 +62,11 @@
     letter-spacing: -2.16px;
     text-transform: uppercase;
     padding: 0 5px;
+    top: 0;
   }
 
   .subscribe-container {
+    position: relative;
     display: flex;
     background-color: #ae1332;
     flex-direction: column;
@@ -73,9 +77,11 @@
     padding-top: 0;
     width: 344px;
     height: 480px;
+    border-radius: 20px;
   }
 
   .blueberry-image {
+    border-radius: 20px;
     width: 344px;
     height: 480px;
     display: flex;
@@ -122,22 +128,28 @@
     padding: 0 35px;
     top: 2px;
     height: 100%;
+    cursor: pointer;
   }
 
   .input-email {
+    color: #fff;
     width: 292px;
     height: 48px;
     background-color: transparent;
     border-radius: 100px;
-    border: 1px solid #fff;
-    opacity: 0.3;
+    border: 1px solid rgba(254, 254, 254, 0.3);
+    padding-left: 24px;
+    outline: none;
+  }
+
+  .inpur-email:hover,
+  .input-email:focus {
+    border-color: #fff;
   }
 
   .input-email::placeholder {
-    padding-left: 24px;
     opacity: 0.5;
     color: #fff;
-    font-family: DM Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -154,12 +166,11 @@
     color: #fff;
     text-align: center;
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-    font-family: DM San;
     font-size: 64px;
     font-style: normal;
     font-weight: 500;
     line-height: 54px; /* 100% */
-    letter-spacing: -2.56px;
+    letter-spacing: -2.16px;
     text-transform: uppercase;
     padding: 0;
   }
@@ -197,6 +208,7 @@
     padding: 0 35px;
     top: 2px;
     height: 100%;
+    cursor: pointer;
   }
 
   .input-email {
@@ -204,15 +216,14 @@
     height: 48px;
     background-color: transparent;
     border-radius: 100px;
-    border: 1px solid #fff;
-    opacity: 0.3;
+    border: 1px solid rgba(254, 254, 254, 0.3);
+    padding-left: 24px;
+    outline: none;
   }
 
   .input-email::placeholder {
-    padding-left: 24px;
     opacity: 0.5;
     color: #fff;
-    font-family: DM Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
