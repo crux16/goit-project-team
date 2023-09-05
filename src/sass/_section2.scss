@@ -1,5 +1,6 @@
 .section-what-we-have {
     background: #ae1332;
+    padding-top:50px;
 }
 
 .section-title {
@@ -124,6 +125,64 @@
     background-color: #f47f4c;
 }
 
+
+
+
+/*-------------------------------------------*/
+/*            ORDER BUTTON                   */
+/*-------------------------------------------*/
+
+.fruit__icon {
+    top: 12%;
+    fill: white;
+    position: relative;
+}
+
+.fruits__order__button {
+    display: flex;
+    padding: 44px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fruits__circle__button {
+    gap: 4px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    cursor: pointer;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #9DC262;
+    transition: background-color 230ms ease-in;
+}
+
+.order__text {
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.56px;
+    transform: rotate(-19deg);
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+    transition: background-color 230ms ease-in;
+}
+
+.fruits__circle__button:hover,
+.fruits__circle__button:focus {
+    background: none;
+
+    .fruit__icon {
+        fill: #9DC262;
+    }
+
+    .order__text {
+        color: #9DC262;
+    }
+}
+
 /*-------------------------------------------*/
 /*                 VIEWPORT                  */
 /*-------------------------------------------*/
@@ -144,6 +203,9 @@
 
 /* TABLET SCREEN */
 @media screen and (min-width: 768px) {
+    .section-what-we-have {
+        padding-top: 0px;
+    }
     .fruits-image {
         height: 251px;
         width: 295px;
@@ -191,7 +253,7 @@
         top: 80%;
     }
 
-    button {
+    .fruits-button {
         font-size: 18px;
         margin-top: -2px;
         padding: 15px 42px;
@@ -203,6 +265,17 @@
     .fruits-project>.fruits-card:nth-child(1n + 9) {
         display: none;
     }
+        .fruits__circle__button {
+            width: 114px;
+            height: 114px;
+        }
+    
+        .order__text {
+            font-size: 18px;
+            line-height: 24px;
+            /* 133.333% */
+            letter-spacing: -0.72px;
+        }
 }
 
 /* LARGE SCREEN(Desktop) */
