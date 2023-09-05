@@ -39,7 +39,7 @@
 </symbol>
 
 <!-- shadow of Fruits -->
-<symbol id="shadow" width="251" height="94" viewBox="0 0 251 94" fill="none">
+<symbol id="shadow"  viewBox="0 0 251 94">
   <g opacity="0.15" filter="url(#filter0_f_89_68)">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M125.5 66C179.348 66 223 57.4934 223 47C223 36.5066 179.348 28 125.5 28C71.6522 28 28 36.5066 28 47C28 57.4934 71.6522 66 125.5 66Z" fill="black"/>
   </g>
