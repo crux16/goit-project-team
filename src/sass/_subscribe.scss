@@ -113,13 +113,15 @@
   }
 
   .btn {
-    position: absolute;
-    background-color: #9dc162;
-    border-radius: 100px;
-    padding: 15px 35px;
-    border: none;
-    right: 0;
     color: #fff;
+    background-color: #9dc162;
+    border: none;
+    border-radius: 100px;
+    position: absolute;
+    right: 0;
+    padding: 0 35px;
+    top: 2px;
+    height: 100%;
   }
 
   .input-email {
@@ -186,13 +188,15 @@
   }
 
   .btn {
-    position: absolute;
-    background-color: #9dc162;
-    border-radius: 100px;
-    padding: 15px 35px;
-    border: none;
-    right: 0;
     color: #fff;
+    background-color: #9dc162;
+    border: none;
+    border-radius: 100px;
+    position: absolute;
+    right: 0;
+    padding: 0 35px;
+    top: 2px;
+    height: 100%;
   }
 
   .input-email {
