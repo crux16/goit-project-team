@@ -216,6 +216,7 @@
   border: 1px solid #ae1332;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #fff;
+  opacity: 0.9;
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -225,7 +226,6 @@
   width: 24px;
   height: 24px;
   fill: currentColor;
-  opacity: 0.9;
 }
 
 .footer-contacts {
