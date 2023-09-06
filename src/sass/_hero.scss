@@ -1,10 +1,9 @@
-.section-container {
-    position: relative;
+.section-wrapper {
+    background-color: $hotpink;
 }
 
-.hero {
-    color: $white; 
-    padding: 64px 0; 
+.section-container {
+    position: relative;
     background-image: url(../images/hero-section/strawberry-bg.png), url(../images/hero-section/banana-bg.png);
     background-repeat: no-repeat;
     background-size: 56px, 66px;
@@ -23,6 +22,11 @@
         background-size: 120px, 190px;
         background-position: 889px 39px, 209px 200px;
     }
+}
+
+.hero {
+    color: $white; 
+    padding: 64px 0;
 }
 
 .hero-title {
