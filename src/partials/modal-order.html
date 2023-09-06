@@ -1,0 +1,119 @@
+<!-- MODAL -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal-close" data-modal-close>
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="./images/icons.svg#modal-close-btn-icon"></use>
+      </svg>
+    </button>
+
+    <h1 class="modal-form-title">YOUR ORDER</h1>
+
+    <div class="selected__fruits_order">
+      <ul class="order__cart">
+        <li class="order__fruits list">
+          <div class="fruits__checkmark">
+            <input type="checkbox" class="checkbox-form" />
+          </div>
+          <div class="fruit-holder">
+            <h2 class="fruit-name-order">Strawberry Berry</h2>
+            <p class="fruit-type-order">Plant</p>
+          </div>
+          <div class="picture-order-box">
+            <img
+              src="./images/modal-section/product-cart-1.png"
+              alt="Strawberry Basket"
+              width="107"
+              height="95"
+              class="fruits-basket"
+            />
+          </div>
+        </li>
+
+        <li class="order__fruits list">
+          <div class="fruit-holder">
+            <h2 class="fruit-name-order">Apple Basket</h2>
+            <p class="fruit-type-order">Plant</p>
+          </div>
+          <div class="picture-order-box">
+            <img
+              src="./images/modal-section/product-cart-2.png"
+              alt="Strawberry Basket"
+              width="107"
+              height="95"
+              class="fruits-basket"
+            />
+          </div>
+          <div class="fruits__checkmark">
+            <input type="checkbox" class="checkbox-form" />
+          </div>
+        </li>
+
+        <li class="order__fruits list">
+          <div class="fruit-holder">
+            <h2 class="fruit-name-order">Fruits Basket</h2>
+            <p class="fruit-type-order">Plant</p>
+          </div>
+          <div class="picture-order-box">
+            <img
+              src="./images/modal-section/product-cart-3.png"
+              alt="Strawberry Basket"
+              width="107"
+              height="95"
+              class="fruits-basket"
+            />
+          </div>
+          <div class="fruits__checkmark">
+            <input type="checkbox" class="checkbox-form" />
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- MODAL FORMS-->
+    <form class="form">
+      <label class="form-field">
+        <!-- Enter full name...  -->
+        <input
+          type="text"
+          name=""
+          class="form-input"
+          placeholder="Enter full name..."
+          required
+        />
+      </label>
+
+      <label class="form-field">
+        <!-- Enter email... -->
+        <input
+          type="email"
+          name=""
+          class="form-input"
+          placeholder="Enter email..."
+          required
+        />
+      </label>
+
+      <label class="form-field">
+        <input
+          type=""
+          name=""
+          class="form-input"
+          placeholder="Enter card..."
+          required
+        />
+      </label>
+
+      <label class="form-field">
+        <!-- Enter Comment -->
+        <textarea
+          class="text-area"
+          name="comments"
+          rows="10"
+          placeholder="Enter Comment..."
+        ></textarea>
+      </label>
+      <button type="submit" class="form-modal-button">Submit</button>
+    </form>
+  </div>
+</div>

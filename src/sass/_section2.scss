@@ -132,7 +132,7 @@
 /*            ORDER BUTTON                   */
 /*-------------------------------------------*/
 
-.fruit__icon {
+.fruits__arrow__icon {
     top: 12%;
     fill: white;
     position: relative;
@@ -150,6 +150,7 @@
     width: 80px;
     height: 80px;
     display: flex;
+    border: none;
     cursor: pointer;
     border-radius: 50%;
     align-items: center;
@@ -172,7 +173,7 @@
 
 .fruits__circle__button:hover,
 .fruits__circle__button:focus {
-    background: none;
+    background-color: white;
 
     .fruit__icon {
         fill: #9DC262;
@@ -183,6 +184,9 @@
     }
 }
 
+
+
+
 /*-------------------------------------------*/
 /*                 VIEWPORT                  */
 /*-------------------------------------------*/
@@ -190,10 +194,6 @@
 /*  MOBILE  */
 @media (min-width: 320px) {
     @media (max-width: 767px) {
-        .container {
-            padding: 0 20px;
-        }
-
         .fruits-project>.fruits-card img {
             width: 100%;
         }
@@ -288,12 +288,6 @@
 
 /* LARGE SCREEN(Desktop) */
 @media screen and (min-width: 1280px) {
-    .container {
-        width: unset;
-        margin: 0px;
-        padding: 0px 32px;
-    }
-
     .fruit-info {
         display: flex;
         flex-direction: column;
