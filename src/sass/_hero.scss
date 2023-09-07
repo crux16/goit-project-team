@@ -4,11 +4,12 @@
 
 .hero-section {
     position: relative;
-   
+    display: inline-flex;
+    flex-wrap: wrap;
+    row-gap: 44px;
 
     @media screen and (min-width: 768px) {
-        display: inline-flex;
-        flex-wrap: wrap;
+        
     }
 
     @media screen and (min-width: 1280px) {
