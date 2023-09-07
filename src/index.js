@@ -14,6 +14,7 @@
       : 'enableBodyScroll';
     bodyScrollLock[scrollLockMethod](document.body);
   };
+  
   openMenuBtn1.addEventListener('click', toggleMenu);
   closeMenuBtn1.addEventListener('focusout', toggleMenu);
 
@@ -25,7 +26,6 @@
     openMenuBtn1.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
-})();
 
   
   const refs = {

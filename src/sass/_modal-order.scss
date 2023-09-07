@@ -14,14 +14,17 @@
 }
 
 .modal {
-    top: 50%;
+    top: 60%;
     left: 50%;
     min-width: 335px;
     min-height: auto;
+    height: inherit;
     border-radius: 20px;
     position: absolute;
     padding: 20px;
     background-color: white;
+    z-index: 2;
+    overflow-y: auto;
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);

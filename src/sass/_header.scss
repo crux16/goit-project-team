@@ -56,6 +56,18 @@
 .icon-close {
     width: 16px;
     height: 16px;
+
+}
+
+.logo-icon {
+    border-radius: 0;
+    transform: rotate(0deg);
+
+    animation: circle 10s 10s ease alternate infinite;
+}
+
+@keyframes circle {
+    50% {border-radius: 100%; transform: rotate(360deg);}
 }
 
 .icon-fries,
