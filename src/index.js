@@ -1,7 +1,8 @@
 (() => {
   const mobileMenu = document.querySelector('.menu-box');
   const openMenuBtn = document.querySelector('.open-menu');
-  const closeMenuBtn = document.querySelector('.pages');
+  const closeMenuBtn = openMenuBtn;
+
   const toggleMenu = () => {
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
@@ -14,8 +15,8 @@
     bodyScrollLock[scrollLockMethod](document.body);
   };
   openMenuBtn.addEventListener('click', toggleMenu);
-  openMenuBtn.addEventListener('click', toggleMenu);
-  closeMenuBtn.addEventListener('click', toggleMenu);
+  closeMenuBtn.addEventListener('focusout', toggleMenu);
+
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;

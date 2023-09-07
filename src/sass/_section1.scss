@@ -3,6 +3,13 @@
   display: flex;
   flex-direction: column;
   color: #fff;
+  padding: 80px 0 0;
+    @media screen and (min-width: 768px) {
+        padding: 100px 0 0;
+    }
+    @media screen and (min-width: 1280px) {
+        padding: 150px 0 0;
+    }
 }
 .section-step-title {
   text-align: center;
@@ -12,8 +19,18 @@
   line-height: 28px;
   letter-spacing: -1.12px;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -1.6px;
+  }
+
   @media screen and (min-width: 1280px) {
     width: 624px;
+    
     margin: 0 auto;
   }
 }
@@ -30,7 +47,7 @@
   margin-top: 44px;
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  gap: 24px 20px; 
   @media screen and (min-width: 768px) {
     align-items: center;
   }

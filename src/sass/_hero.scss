@@ -2,31 +2,44 @@
     background-color: $hotpink;
 }
 
-.section-container {
+.hero-section {
     position: relative;
-    background-image: url(../images/hero-section/strawberry-bg.png), url(../images/hero-section/banana-bg.png);
-    background-repeat: no-repeat;
-    background-size: 56px, 66px;
-    background-position: 281px 74px, -2px 145px;
-    transition: background-position 1000ms cubic-bezier(0.075, 0.82, 0.165, 1),
-    background-size 1000ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
+   
 
     @media screen and (min-width: 768px) {
-        padding: 100px 0;
-        background-size: 108px, 132px;
-        background-position: 576px 46px, 37px 152px;
+        display: inline-flex;
+        flex-wrap: wrap;
     }
+
     @media screen and (min-width: 1280px) {
-        margin-bottom: 80px;
-        position: relative;
-        background-size: 120px, 190px;
-        background-position: 889px 39px, 209px 200px;
+        width: 100%;
+        height: 930px;
     }
 }
 
 .hero {
-    color: $white; 
-    padding: 64px 0;
+    color: $white;
+}
+
+.hero-container {
+    padding-top: 80px;
+    background-image: url(../images/hero-section/strawberry-bg.png), url(../images/hero-section/banana-bg.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 56px, 66px;
+    background-position: 300px 40px, 28px 100px;
+    transition: background-position 1000ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    background-size 1000ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    
+    @media screen and (min-width: 768px) {
+        padding-top: 100px;
+        background-size: 108px, 132px;
+        background-position: 586px 69px, 67px 176px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding-top: 150px; 
+        background-size: 120px, 190px;
+        background-position: 869px 100px, 234px 225px;
+    }
 }
 
 .hero-title {
@@ -67,6 +80,10 @@
     padding: 12px;
     position: relative;
     margin: 0 auto;
+
+    @media screen and (min-width: 1280px){
+    order: 2;
+    }
 }
 
 .hero-image {
@@ -74,7 +91,6 @@
     padding: 10px;
     box-shadow: 0 1px 0 0 white ;
     border-radius: 500px;
-    overflow:hidden;
 
     @media screen and (min-width: 768px) {
         width: 486px;
@@ -83,7 +99,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-        margin: 0 300px;
+        
     }
 }
 .hero-image img {
@@ -121,6 +137,10 @@
         letter-spacing: -1.12px;
         text-transform: uppercase;
     }
+
+    @media screen and (min-width: 1280px) {
+        bottom: 150px;    
+    }
 }
 
 .hero-shop-now:hover,
@@ -136,12 +156,14 @@
     justify-content: center;
 
     @media screen and (min-width: 768px) {
+        margin-top: 0;
         flex-direction: row;
         column-gap: 144px;
         justify-content: space-between;
     }
     @media screen and (min-width: 1280px) {
-        bottom: 0;
+        top: 0;
+        height: 100%;
         position: absolute;
         column-gap: 640px;
     }
@@ -157,11 +179,16 @@
 
     @media screen and (min-width: 768px) {
         justify-content: flex-start;
+        width: 300px;
     }
 }
 
 .hero-left {
     order: 1;
+    margin-top: 70px;
+    @media screen and (min-width: 768px) {
+        margin-top: 63px;
+    }
     @media screen and (min-width: 1280px) {
         justify-content: flex-end;
     }
@@ -171,6 +198,12 @@
     order: 2;
     @media screen and (min-width: 768px) {
         flex-direction: column-reverse;
+        margin-left: auto;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-top: 80px;
+        align-self: center;
+        align-items: center;
     }
 }
 
@@ -187,10 +220,25 @@
     text-align: center;
     border-radius: 500px;
     background: #A4CB66;
+
+    @media screen and (min-width: 768px) {
+        width: 249px;
+        height: 387px;      
+        margin-left: auto;
+    }
 }
 
 .hero-fruit {
     margin-top: 61px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 19px;
+    }
+    @media screen and (min-width:1280px) {
+        margin-top: 9px;
+        width: 162px;
+        height: 185px;
+    }
 }
 
 .hero-list {
@@ -225,6 +273,35 @@
     }
 }
 
+
 .hero-right .image-desc{
     background-color: #F5CE13;
+    @media screen and (min-width: 768px) {
+        margin-left: 0;
+        margin-right: auto;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-right: 0;
+    }
+}
+
+.text-cap {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px; 
+    letter-spacing: -0.48px;
+    text-transform: uppercase;
+}
+
+.hero-left .hero-fruit {
+    margin-top: 61px;
+    width: 200px;
+    height: 172px;
+}
+
+.hero-right .hero-fruit {
+    margin: 19px auto;
+    width: 162px;
+    height: 185px;
 }

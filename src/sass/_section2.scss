@@ -1,6 +1,12 @@
 .section-what-we-have {
     background: #ae1332;
-    padding-top:50px;
+    padding: 80px 0 0;
+    @media screen and (min-width: 768px) {
+        padding: 100px 0 0;
+    }
+    @media screen and (min-width: 1280px) {
+        padding: 150px 0 0;
+    }
 }
 
 .section-title {
@@ -203,9 +209,6 @@
 
 /* TABLET SCREEN */
 @media screen and (min-width: 768px) {
-    .section-what-we-have {
-        padding-top: 0px;
-    }
     .fruits-image {
         height: 251px;
         width: 295px;
