@@ -38,7 +38,7 @@
 
 @media screen and (min-width: 1280px) {
   .image-footer {
-    background-color: #ffc3c5;
+    background-color: $background-flesh;
     border-radius: 100px;
     width: 100%;
     background-image: linear-gradient(
@@ -71,7 +71,7 @@
   }
 }
 .image-footer {
-  background-color: #ffc3c5;
+  background-color: $background-flesh;
   border-radius: 100px;
   width: 100%;
   background-image: linear-gradient(
@@ -85,7 +85,7 @@
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   animation-delay: 1000ms;
   overflow: hidden;
-  width: 349px;
+  max-width: 349px;
   height: 179px;
   display: flex;
   justify-content: center;
@@ -144,7 +144,7 @@
   height: 16px;
 }
 .page-footer {
-  color: #ae1332;
+  color: $hotpink;
 }
 .footer-menu {
   padding-top: 24px;
@@ -213,7 +213,7 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  border: 1px solid #ae1332;
+  border: 1px solid $hotpink;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #fff;
   opacity: 0.9;
@@ -266,7 +266,7 @@
 
 .footer-phone,
 .footer-address {
-  color: #ae1332;
+  color: $hotpink;
   font-family: DM Sans;
   font-size: 15px;
   font-style: normal;

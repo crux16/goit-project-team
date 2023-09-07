@@ -89,7 +89,7 @@
 .hero-image {
     width: 100%;
     padding: 10px;
-    box-shadow: 0 1px 0 0 white ;
+    box-shadow: 0 1px 0.9px 0.1px $white; ;
     border-radius: 500px;
 
     @media screen and (min-width: 768px) {
@@ -176,8 +176,10 @@
     flex-direction: column;
     align-items: center;
     row-gap: 44px;
+    padding: 0 28px;
 
     @media screen and (min-width: 768px) {
+        padding: 0;
         justify-content: flex-start;
         width: 300px;
     }
@@ -208,7 +210,7 @@
 }
 
 .description {
-    width: 279px;
+    max-width: 279px;
     font-size: 14px;
     line-height: 18px; 
     letter-spacing: -0.56px;
@@ -217,7 +219,6 @@
 .image-desc {
     position: relative;
     padding: 28px 24px 40px;
-    width: 249px;
     text-align: center;
     border-radius: 500px;
     background: #A4CB66;
