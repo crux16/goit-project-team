@@ -215,6 +215,7 @@
 }
 
 .image-desc {
+    position: relative;
     padding: 28px 24px 40px;
     width: 249px;
     text-align: center;
@@ -304,4 +305,10 @@
     margin: 19px auto;
     width: 162px;
     height: 185px;
+}
+
+.hero-right .shadow-fruit,
+.hero-left .shadow-fruit {
+    transform: translateY(-132px);
+    left: -2% !important;
 }

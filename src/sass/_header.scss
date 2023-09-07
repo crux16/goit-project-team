@@ -2,7 +2,8 @@
     color: $hotpink;
     background-color: rgba(255, 255, 255, 0.9);
     position: sticky;
-    top: 0;
+    border-top: 2px solid  #fff;
+    top: -2px;
     z-index: 999;
 }
 
