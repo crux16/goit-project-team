@@ -1,10 +1,16 @@
 .section-what-we-have {
     background: #ae1332;
-    padding-top:50px;
+    padding: 80px 0 0;
+    @media screen and (min-width: 768px) {
+        padding: 100px 0 0;
+    }
+    @media screen and (min-width: 1280px) {
+        padding: 150px 0 0;
+    }
 }
 
 .section-title {
-    color: #fff;
+    color: $white;
     margin: 0px;
     font-size: 28px;
     font-weight: 500;
@@ -15,7 +21,7 @@
 }
 
 .fruit-description {
-    color: #fff;
+    color: $white;
     font-weight: 400;
     line-height: 18px;/* 128.571% */
     text-align: center;
@@ -24,7 +30,7 @@
 }
 
 .fruit-name {
-    color: #fff;
+    color: $white;
     margin: 0;
     font-size: 24px;
     font-weight: 700;
@@ -33,7 +39,7 @@
 }
 
 .fruit-type {
-    color: #fff;
+    color: $white;
     font-weight: 400;
     margin: 8px 0 0 0;
     line-height: 18px;/* 128.571% */
@@ -74,7 +80,7 @@
     border-radius: 200px;
 
     cursor: pointer;
-    background: #fff;
+    background: $white;
     position: relative;
     align-items: center;
     display: inline-flex;
@@ -160,7 +166,7 @@
 }
 
 .order__text {
-    color: #ffffff;
+    color: $white;
     text-align: center;
     font-size: 14px;
     font-weight: 500;
@@ -173,7 +179,7 @@
 
 .fruits__circle__button:hover,
 .fruits__circle__button:focus {
-    background-color: white;
+    background: $white;
 
     .fruit__icon {
         fill: #9DC262;
@@ -207,16 +213,9 @@
 
 /* TABLET SCREEN */
 @media screen and (min-width: 768px) {
-    .section-what-we-have {
-        padding-top: 0px;
-    }
     .fruits-image {
         height: 251px;
         width: 295px;
-    }
-
-    .container {
-        padding: 0 32px;
     }
 
     .fruit-info {
