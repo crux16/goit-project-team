@@ -1,0 +1,239 @@
+/*-------------------------------------------------------------------*/
+/*                    MODAL CSS                                      */
+/*-------------------------------------------------------------------*/
+
+.backdrop {
+    top: 0;
+    left: 0;
+    opacity: 2;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.3, 1);
+}
+
+.modal {
+    top: 50%;
+    left: 50%;
+    min-width: 335px;
+    min-height: auto;
+    border-radius: 20px;
+    position: absolute;
+    padding: 20px;
+    background-color: white;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-title {
+    padding-bottom: 40px;
+    color: #AE1332;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+    font-family: DM Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -1.12px;
+}
+
+/* Modal icon X(close) button  */
+.is-hidden {
+    opacity: 0;
+    visibility: none;
+    pointer-events: none;
+}
+
+
+.modal-close {
+    top: 21px;
+    right: 17px;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-icon {
+    fill: currentColor;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+
+/* Modal Form field inputs */
+.form-field {
+    display: block;
+    margin-top: 16px;
+    position: relative;
+}
+
+.form-field .form-label {
+    top: -20px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    position: absolute;
+    letter-spacing: 0.48px;
+    color: var(--lightslate);
+}
+
+.form-field .form-input,
+.form-field .text-area {
+    width: 100%;
+    height: 46px;
+    display: block;
+    border-radius: 100px;
+    margin-bottom: 14px;
+    /* color: gray; */
+    padding: 14px 24px;
+    /* border: 1px solid rgba(46, 47, 66, 0.4); */
+    border: 1px solid #000;
+    opacity: 0.3;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #000;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.56px;
+}
+
+.form-field .text-area {
+    resize: none;
+    border-radius: 20px;
+    height: 132px;
+}
+
+.form-field .form-input:hover,
+.form-field .form-input:focus,
+.form-field .text-area:hover,
+.form-field .text-area:focus {
+    outline: none;
+    border-color: black;
+}
+
+
+.form-modal-button {
+    width: 92px;
+    margin-top: 20px;
+    display: inline-flex;
+    padding: 12px 24px;
+    align-items: center;
+    gap: 15px;
+    border-radius: 100px;
+    background: #9DC162;
+    border: none;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.56px;
+}
+
+
+
+/* css for order tags */
+.order__cart {
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.order__fruits {
+    background-color: red;
+    padding: 14px 14px 8px 20px;
+    gap: 5px 2px;
+    display: flex;
+    border-radius: 30px;
+    flex-direction: row;
+    width: 295px;
+    height: 119px;
+}
+
+.fruit-name-order {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 133.333% */
+    letter-spacing: -0.72px;
+    width: 150px;
+}
+
+.fruit-type-order {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: -0.28px;
+}
+
+
+.fruit-holder {
+    order: 1;
+}
+
+.picture-order-box {
+    order: 2;
+}
+
+.fruits__checkmark {
+    order: 3;
+}
+
+
+.order__cart>.order__fruits:nth-child(1) {
+    background-color: #f8766b;
+}
+
+.order__cart>.order__fruits:nth-child(2) {
+    background-color: #EDD251;
+}
+
+.order__cart>.order__fruits:nth-child(3) {
+    background-color: #9DC262;
+}
+
+/*-------------------------------------------*/
+/*                 VIEWPORT                  */
+/*-------------------------------------------*/
+
+/*  MOBILE  */
+@media (min-width: 320px) {
+
+    @media (max-width: 767px) {
+
+    }
+}
+
+
+/* TABLET SCREEN */
+@media screen and (min-width: 768px) {
+    }
+        /* LARGE SCREEN(Desktop) */
+        @media screen and (min-width: 1280px) {
+
+        }

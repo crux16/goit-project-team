@@ -138,7 +138,7 @@
 /*            ORDER BUTTON                   */
 /*-------------------------------------------*/
 
-.fruit__icon {
+.fruits__arrow__icon {
     top: 12%;
     fill: white;
     position: relative;
@@ -156,6 +156,7 @@
     width: 80px;
     height: 80px;
     display: flex;
+    border: none;
     cursor: pointer;
     border-radius: 50%;
     align-items: center;
@@ -188,6 +189,9 @@
         color: #9DC262;
     }
 }
+
+
+
 
 /*-------------------------------------------*/
 /*                 VIEWPORT                  */
