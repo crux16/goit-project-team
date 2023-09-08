@@ -15,7 +15,7 @@
     bodyScrollLock[scrollLockMethod](document.body);
   };
   
-  openMenuBtn1.addEventListener('click', toggleMenu);
+  openMenuBtn1.addEventListener('focus', toggleMenu);
   closeMenuBtn1.addEventListener('focusout', toggleMenu);
 
   // Close the mobile menu on wider screens if the device orientation changes

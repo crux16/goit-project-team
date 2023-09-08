@@ -3,8 +3,8 @@
 /*-------------------------------------------------------------------*/
 
 .backdrop {
-    top: 0;
     left: 0;
+    top: 0;
     opacity: 2;
     width: 100%;
     height: 100%;
@@ -13,26 +13,31 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.3, 1);
 }
 
+
 .modal {
-    top: 60%;
+    top: 50%;
     left: 50%;
-    min-width: 335px;
-    min-height: auto;
+    width: 100%;
     height: inherit;
-    border-radius: 20px;
+    border-radius: 0;
     position: absolute;
     padding: 20px;
-    background-color: white;
-    z-index: 2;
+    background-color: $white;
     overflow-y: auto;
+    z-index: 9999;
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-height: 890px) {
+        border-radius: 20px; 
+        height: auto;
+    }
 }
 
 .modal-form-title {
     padding-bottom: 40px;
-    color: #AE1332;
+    color: $hotpink;
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
     font-family: DM Sans;
     font-size: 28px;
@@ -157,10 +162,18 @@
     padding: 0px;
     display: flex;
     gap: 10px;
-    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.modal__checkmark {
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    right: 14px;
 }
 
 .order__fruits {
+    position: relative;
     background-color: red;
     padding: 14px 14px 8px 20px;
     gap: 5px 2px;
@@ -195,18 +208,24 @@
 }
 
 
-.fruit-holder {
-    order: 1;
-}
 
 .picture-order-box {
-    order: 2;
+    padding-right: 12px;
 }
 
 .fruits__checkmark {
-    order: 3;
+    width: 20px;
+    height: 20px;
+    fill: transparent;
 }
 
+.checkbox-form:checked + .fruits__checkmark {
+    fill: $white;
+}
+
+.fruits-basket {
+    height: 95px;
+}
 
 .order__cart>.order__fruits:nth-child(1) {
     background-color: #f8766b;
@@ -225,8 +244,10 @@
 /*-------------------------------------------*/
 
 /*  MOBILE  */
-@media (min-width: 320px) {
-
+@media (min-width: 375px) {
+    .modal {
+        width: 335px;
+    }
     @media (max-width: 767px) {
 
     }
@@ -235,8 +256,49 @@
 
 /* TABLET SCREEN */
 @media screen and (min-width: 768px) {
+    .modal {
+        width: 704px;
+        padding: 40px;
+        background-image: url('../images/modal-section/product-cart-lady.png');
+        background-size: 471px 458px;
+        background-repeat: no-repeat;
+        background-position: 407px 354px;
     }
-        /* LARGE SCREEN(Desktop) */
-        @media screen and (min-width: 1280px) {
 
-        }
+    .order__fruits{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 200px;
+        height: 250px;
+        padding: 40px 20px 20px;
+    }
+
+    .fruits-basket {
+        height: 148px;
+    }
+
+    .form {
+        width: 360px;
+    }
+}
+
+    /* LARGE SCREEN(Desktop) */
+@media screen and (min-width: 1280px) {
+    .modal {
+        width: 891px;
+        background-position: 453px 420px;
+    }
+
+    .order__cart {
+        justify-content: space-between;
+    }
+
+    .order__fruits{
+        width: 257px;
+        height: 308px;
+    }
+
+    .fruits-basket {
+        height: 196px;
+    }
+}

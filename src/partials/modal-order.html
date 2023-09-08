@@ -1,5 +1,6 @@
 <!-- MODAL -->
 <div class="backdrop is-hidden" data-modal>
+  <div class="container">
   <div class="modal">
     <button type="button" class="modal-close" data-modal-close>
       <svg class="modal-close-icon" width="24" height="24">
@@ -12,9 +13,12 @@
     <div class="selected__fruits_order">
       <ul class="order__cart">
         <li class="order__fruits list">
-          <div class="fruits__checkmark">
-            <input type="checkbox" class="checkbox-form" />
-          </div>
+          <label class="modal__checkmark">          
+            <input type="checkbox" class="checkbox-form visually-hidden" /> 
+            <svg class="fruits__checkmark">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+          </label>
           <div class="fruit-holder">
             <h2 class="fruit-name-order">Strawberry Berry</h2>
             <p class="fruit-type-order">Plant</p>
@@ -23,8 +27,6 @@
             <img
               src="./images/modal-section/product-cart-1.png"
               alt="Strawberry Basket"
-              width="107"
-              height="95"
               class="fruits-basket"
             />
           </div>
@@ -39,14 +41,15 @@
             <img
               src="./images/modal-section/product-cart-2.png"
               alt="Strawberry Basket"
-              width="107"
-              height="95"
               class="fruits-basket"
             />
           </div>
-          <div class="fruits__checkmark">
-            <input type="checkbox" class="checkbox-form" />
-          </div>
+          <label class="modal__checkmark">          
+            <input type="checkbox" class="checkbox-form visually-hidden" /> 
+            <svg class="fruits__checkmark">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+          </label>
         </li>
 
         <li class="order__fruits list">
@@ -58,14 +61,15 @@
             <img
               src="./images/modal-section/product-cart-3.png"
               alt="Strawberry Basket"
-              width="107"
-              height="95"
               class="fruits-basket"
             />
           </div>
-          <div class="fruits__checkmark">
-            <input type="checkbox" class="checkbox-form" />
-          </div>
+          <label class="modal__checkmark">          
+            <input type="checkbox" class="checkbox-form visually-hidden" /> 
+            <svg class="fruits__checkmark">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+          </label>
         </li>
       </ul>
     </div>
@@ -116,4 +120,5 @@
       <button type="submit" class="form-modal-button">Submit</button>
     </form>
   </div>
+</div>
 </div>

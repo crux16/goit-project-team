@@ -63,5 +63,11 @@
     <path d="M6 6L18 18" stroke="#AE1332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   </symbol>
 
+  <!-- modal checkbox -->
+  <symbol id="icon-check" viewBox="0 0 32 32">
+  <path d="M20.061 10.162c0.397-0.585 1.193-0.738 1.778-0.341s0.738 1.193 0.341 1.778l-6.942 10.24c-0.508 0.749-1.611 0.749-2.119 0l-3.298-4.864c-0.397-0.585-0.244-1.381 0.341-1.778s1.381-0.244 1.778 0.341l2.238 3.301 5.883-8.677z"></path>
+  <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.4" d="M6.4 1.2h19.2c2.872 0 5.2 2.328 5.2 5.2v19.2c0 2.872-2.328 5.2-5.2 5.2h-19.2c-2.872 0-5.2-2.328-5.2-5.2v-19.2c0-2.872 2.328-5.2 5.2-5.2z"></path>
+  </symbol>
+
 </defs>
 </svg>

@@ -1,10 +1,11 @@
 .header {
     color: $hotpink;
     background-color: rgba(255, 255, 255, 0.9);
-    position: sticky;
     border-top: 2px solid  $white;
     top: -2px;
-    z-index: 999;
+    position: sticky;
+    border: 2px solid $white;
+    z-index: 1;
 }
 
 .header-container {
