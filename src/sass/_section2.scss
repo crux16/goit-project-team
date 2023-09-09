@@ -181,8 +181,9 @@
 .fruits__circle__button:focus {
     background: $white;
 
-    .fruit__icon {
+    .fruits__arrow__icon {
         fill: #9DC262;
+        stroke: #9DC262;
     }
 
     .order__text {

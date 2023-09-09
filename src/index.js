@@ -1,6 +1,7 @@
+(() => {
 const mobileMenu1 = document.querySelector('.menu-box');
 const openMenuBtn1 = document.querySelector('.open-menu');
-const closeMenuBtn1 = openMenuBtn1;
+const closeMenuBtn1 = document.querySelector('.nav-menu');
 
  const toggleMenu = () => {
   const isMenuOpen =
@@ -15,6 +16,7 @@ const closeMenuBtn1 = openMenuBtn1;
 };
 
 openMenuBtn1.addEventListener('click', toggleMenu);
+closeMenuBtn1.addEventListener('click', toggleMenu);
 
 // Close the mobile menu on wider screens if the device orientation changes
 window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
@@ -23,4 +25,4 @@ window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
   mobileMenu1.classList.remove('is-open');
   openMenuBtn1.setAttribute('aria-expanded', false);
   bodyScrollLock.enableBodyScroll(document.body);
-});
+})})();
