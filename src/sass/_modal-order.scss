@@ -20,20 +20,23 @@
     height: 100vh;
     top: 20px;
     @media screen and  (min-height: 1000px) {
-        position: static;
+        top: 0;
     }
 }
 
 .modal {
     top: 50%;
     left: 50%;
-    width: 100%;
     height: 100%;
     border-radius: 0;
     position: absolute;
-    padding: 20px;
+    padding: 20px 20px 100px;
     background-color: $white;
     overflow-y: auto;
+    overflow-x: hidden;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 40px;
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -69,6 +72,7 @@
     position: absolute;
     align-items: center;
     justify-content: center;
+    color: #f8766b;
 
     cursor: pointer;
     background-color: transparent;
@@ -158,8 +162,6 @@
     letter-spacing: -0.56px;
 }
 
-
-
 /* css for order tags */
 .order__cart {
     margin: 0;
@@ -167,6 +169,10 @@
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+}
+
+.close-banner {
+    color: #FFF;
 }
 
 .modal__checkmark {
@@ -243,31 +249,78 @@
     background-color: #9DC262;
 }
 
+.fixed-banner{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+// Banana Girl
+
+.banana-gurl {
+    position: absolute;
+    bottom: -75px;
+    right: -175px;
+    width: 469px;
+    height: 467px;
+    display: none;
+}
+
+
+
+// Banner Display
+
+.banner-fruits {
+    border-radius: 20px;
+    background: #E03F5E;
+    color: #fff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 600px;
+    height: 545px;
+    padding: 68px 105px 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -350%);
+    transition: transform 250ms ease-in-out;
+}
+
+.banner-fruits.is-display {
+    transform: translate(-50%, -50%);
+}
+
+
+.banner__fruits__title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px; 
+    letter-spacing: -1.6px;
+    text-transform: uppercase;
+}
+
+
 /*-------------------------------------------*/
 /*                 VIEWPORT                  */
 /*-------------------------------------------*/
-
-/*  MOBILE  */
-@media (min-width: 375px) {
-    .modal {
-        width: 335px;
-    }
-    @media (max-width: 767px) {
-
+@media screen and (min-width: 375px) {
+    @media screen and (min-height: 1000px) {
+        .modal {
+            padding: 20px;
+            border-radius: 20px; 
+            overflow-y: hidden;
+            height: auto;
+        }
     }
 }
-
 
 /* TABLET SCREEN */
 @media screen and (min-width: 768px) {
     .modal {
         width: 704px;
         padding: 40px;
-        background-image: url('../images/modal-section/product-cart-lady.png');
-        background-size: 471px 458px;
-        background-repeat: no-repeat;
-        background-position: 407px 354px;
-        transition: background-position 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .order__fruits{
@@ -284,6 +337,18 @@
 
     .form {
         width: 360px;
+    }
+
+    @media screen and (min-height: 853px) {
+        .modal{
+            border-radius: 20px; 
+            height: auto;
+            overflow-y: hidden;
+        }
+    }
+
+    .banana-gurl {
+        display: block;
     }
 }
 
@@ -306,17 +371,16 @@
     .fruits-basket {
         height: 196px;
     }
-}
 
-@media screen and (min-height: 1000px) {
-    .modal{
-        border-radius: 20px; 
-        height: auto;
+    @media screen and (min-height: 911px) {
+        .modal{
+            border-radius: 20px; 
+            height: auto;
+            overflow-y: hidden;
+        }
     }
-}
-
-@media screen and (max-height: 1000px) {
-    .modal {
-    padding-bottom: 70px;  
+    
+    .banana-gurl {
+        right: 0;
     }
 }

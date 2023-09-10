@@ -1,9 +1,10 @@
 <!-- MODAL -->
 <div class="backdrop is-hidden" data-modal>
   <div class="container modal-container">
+  <!-- modal form -->
   <div class="modal">
     <button type="button" class="modal-close" data-modal-close>
-      <svg class="modal-close-icon" width="24" height="24">
+      <svg class="modal-close-icon icon" width="24" height="24">
         <use href="./images/icons.svg#modal-close-btn-icon"></use>
       </svg>
     </button>
@@ -72,7 +73,7 @@
           </label>
         </li>
       </ul>
-    </div>
+      </div>
 
     <!-- MODAL FORMS-->
     <form class="form">
@@ -117,8 +118,27 @@
           placeholder="Enter Comment..."
         ></textarea>
       </label>
-      <button type="submit" class="form-modal-button">Submit</button>
+      <button type="submit" class="form-modal-button" banner-open>Submit</button>
     </form>
+    <div class="banana-gurl">
+      <img
+        src="./images/modal-section/product-cart-lady.png"
+        alt="Banana Gurl"
+      />
+  </div>
   </div>
 </div>
+
+<!-- Banner Fruit -->
+<div class="banner-fruits" banner-display>
+  <button type="button" class="modal-close close-banner" banner-close>
+    <svg class="modal-close-icon icon" width="24" height="24">
+      <use href="./images/icons.svg#modal-close-btn-icon"></use>
+    </svg>
+  </button>    
+  <img src="./images/modal-section/raspberry.png" alt="This is Raspberry" width="278" height="239">
+  <h2 class="banner__fruits__title">tHANK YOU</h2>
+  <p>Thank you for your order! Our team is preparing your box with fresh, delicious fruits and vegetables, and we'll deliver it straight to your doorstep. We appreciate your business and look forward to providing you with the best possible experience!</p>
+</div>
+
 </div>
